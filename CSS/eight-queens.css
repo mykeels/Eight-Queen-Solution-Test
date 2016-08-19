@@ -32,9 +32,9 @@
     }
 
 .queen-black {
-    background-image: url('../img/chess-queen-black.png');
+    background-image: url('../IMG/chess-queen-black.png');
 }
 
 .queen-white {
-    background-image: url('../img/chess-queen-white.png');
+    background-image: url('../IMG/chess-queen-white.png');
 }
