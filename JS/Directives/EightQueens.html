@@ -1,0 +1,57 @@
+﻿<style>
+    .board {
+        margin-left: 20%;
+        margin-bottom: 70px;
+    }
+
+    .tile {
+        padding: 18px;
+        color: black;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid #5a3e1f;
+    }
+
+    .tile.black {
+        background-color: black;
+        color: white;
+    }
+
+    .tile.red {
+        background-color: red;
+        color: white;
+    }
+
+    .tile.blue {
+        background-color: #00AAFF;
+        color: white;
+    }
+
+    .queen-black {
+        background-image: url('img/chess-queen-black.png');
+    }
+
+    .queen-white {
+        background-image: url('img/chess-queen-white.png');
+    }
+</style>
+
+<center>
+    <div class="row board">
+        <div class="col-xs-12" ng-repeat="row in tilecolors track by $index">
+            <div class="row">
+                <div class="col-xs-1 border tile" ng-repeat="col in row track by $index"
+                     ng-class="{'black': col == 1, 'red': tiles[$parent.$index][$index] == -1,
+                 'blue': tiles[$parent.$index][$index] == 1, 'queen-black': col == 1 && tiles[$parent.$index][$index] != 0,
+                 'queen-white': col == 0 && tiles[$parent.$index][$index] != 0}" ng-click="toggleQueen($parent.$index, $index)">
+                    <!--<img src="img/chess-queen-white.png" class="img img-responsive"
+                        ng-if="col == 1 && tiles[$parent.$index][$index] != 0" />
+                    <img src="img/chess-queen-black.png" class="img img-responsive"
+                        ng-if="col == 0 && tiles[$parent.$index][$index] != 0" />-->
+                    <img src="img/chess-queen-black.png" style="visibility:hidden;" class="img img-responsive" />
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
