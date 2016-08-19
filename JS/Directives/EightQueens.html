@@ -1,0 +1,24 @@
+﻿
+<div class="row board">
+    <div class="col-xs-12 pad-0">
+        <center>
+            <h5>Try to place 8 queens on the chess board, such that none threaten each other.</h5>
+        </center>
+    </div>
+    <div class="col-xs-12 pad-0" ng-repeat="row in tilecolors track by $index">
+        <div class="row">
+            <div class="col-xs-1 tile" style="visibility:hidden;">
+                <img src="img/chess-queen-black.png" style="visibility:hidden;" class="img img-responsive" />
+            </div>
+            <div class="col-xs-1 tile" style="visibility:hidden;">
+                <img src="img/chess-queen-black.png" style="visibility:hidden;" class="img img-responsive" />
+            </div>
+            <div class="col-xs-1 border tile" ng-repeat="col in row track by $index"
+                 ng-class="{'black': col == 1, 'red': tiles[$parent.$index][$index] == -1,
+                 'blue': tiles[$parent.$index][$index] == 1, 'queen-black': col == 1 && tiles[$parent.$index][$index] != 0,
+                 'queen-white': col == 0 && tiles[$parent.$index][$index] != 0}" ng-click="toggleQueen($parent.$index, $index)">
+                <img src="img/chess-queen-black.png" style="visibility:hidden;" class="img img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>

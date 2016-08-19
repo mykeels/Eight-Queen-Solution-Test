@@ -1,0 +1,40 @@
+﻿.board {
+    margin-bottom: 20px;
+}
+
+.tile {
+    padding: 10px;
+    color: black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #5a3e1f;
+}
+
+    .tile img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .tile.black {
+        background-color: black;
+        color: white;
+    }
+
+    .tile.red {
+        background-color: red;
+        color: white;
+    }
+
+    .tile.blue {
+        background-color: #00AAFF;
+        color: white;
+    }
+
+.queen-black {
+    background-image: url('../img/chess-queen-black.png');
+}
+
+.queen-white {
+    background-image: url('../img/chess-queen-white.png');
+}
