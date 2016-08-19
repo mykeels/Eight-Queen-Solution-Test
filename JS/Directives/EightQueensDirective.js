@@ -11,7 +11,7 @@
 app.directive("eightQueens", function () {
     return {
         restrict: 'AE',
-        templateUrl: 'js/directives/eightqueens.html',
+        templateUrl: 'JS/Directives/EightQueens.html',
         link: function ($scope, elements, attrs) {
             
         },
