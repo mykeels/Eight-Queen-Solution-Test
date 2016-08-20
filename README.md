@@ -8,3 +8,10 @@ The [eight queens puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle) is 
 The eight queens puzzle has 92 distinct solutions. If solutions that differ only by symmetry operations (rotations and reflections) of the board are counted as one, the puzzle has 12 fundamental solutions.
 
 Use this angular directive to test your solutions to the eight-queens problem.
+
+Check out the [demo](https://mykeels.github.io/Eight-Queen-Solution-Test/).
+
+Check out the [Eight Queens C# Solution](https://github.com/mykeels/Extensions/blob/master/Extensions/Heuristics/Meta/Problems/).
+
+![Perfect Eight Queens Chess Solution](https://mykeels.github.io/Eight-Queen-Solution-Test/IMG/eight-queens-solution.PNG)
+
